@@ -195,7 +195,6 @@
             </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/ubahcttn"
-            android:onClick="ubahcatatan"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
