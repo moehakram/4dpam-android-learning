@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">4DPAM-B</string>
+    <string name="todo">TODO</string>
+    <string name="form_login">FORM LOGIN</string>
+    <string name="name">nama</string>
+    <string name="phone_number">phone_number</string>
+    <string name="submit">submit</string>
+    <string name="toko_menu">Nasi Padang Perintis</string>
+    <string name="menu">Nasi, ayam, dan telur</string>
+    <string name="tampil">"Tampil"</string>
+    <string name="ntampil">"Tidak tampil"</string>
+</resources>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gofood">
+
+    <RelativeLayout
+        android:id="@+id/parent_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hijautua"
+        android:paddingVertical="5dp"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/logo"
+            android:layout_marginHorizontal="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/logo_undipa"
+            android:scaleType="centerInside"/>
+        <LinearLayout
+            android:layout_toRightOf="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Rumah Makan Dipa"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jl. Perintis Kemerdekaan KM. 9"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/star"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+<ScrollView
+    android:layout_marginBottom="60dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/parent_top">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <RelativeLayout
+            android:id="@+id/menu1"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:padding="10dp"
+            android:background="@drawable/latarmenu">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/nasi_padang1"/>
+            <RelativeLayout
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toko_menu"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_below="@id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/minus_btn1"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:text="—"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/quantity1"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/plus_btn1"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:text="+"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Rp10.000"
+                    android:textColor="@color/hijautua"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_green"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/menu2"
+            android:layout_below="@id/menu1"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:padding="10dp"
+            android:background="@drawable/latarmenu">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/nasi_goreng"/>
+            <RelativeLayout
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Goreng"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_below="@id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi, Telur, dan Kerupuk"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/minus_btn2"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:text="—"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/quantity2"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/plus_btn2"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:text="+"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Rp15.000"
+                    android:textColor="@color/hijautua"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_green"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/menu3"
+            android:layout_below="@id/menu2"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:padding="10dp"
+            android:background="@drawable/latarmenu">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/nasi_pecel"/>
+            <RelativeLayout
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Pecel"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_below="@id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nasi dan kerupuk"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/minus_btn3"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:text="—"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/quantity3"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/plus_btn3"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:text="+"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Rp20.000"
+                    android:textColor="@color/hijautua"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_green"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/parent_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp">
+
+        <RelativeLayout
+            android:id="@+id/lyth1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/th1"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Total Harga"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/harga"
+            android:layout_toRightOf="@id/th1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp0"
+            android:textStyle="bold"
+            android:textColor="@color/hijautua"
+            android:layout_marginLeft="15dp"
+            android:textSize="13pt"/>
+        </RelativeLayout>
+        <Button
+            android:onClick="onclikBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/hijautua"
+            android:text="Bayar"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

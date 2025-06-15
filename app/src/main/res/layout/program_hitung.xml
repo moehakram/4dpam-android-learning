@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program Hitung Luas Persegi Panjang"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tampil">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Panjang"
+            android:id="@+id/panjang"
+            android:background="@drawable/border"
+            android:padding="15dp"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Lebar"
+            android:layout_marginTop="6dp"
+            android:id="@+id/lebar"
+            android:background="@drawable/border"
+            android:padding="15dp"
+            android:inputType="number"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hitung"
+            android:textStyle="bold"
+            android:backgroundTint="@color/hijau"
+            android:id="@+id/hitung"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tampilkan Keterangan"
+            android:id="@+id/ket"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luas Persegi Panjang : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/hasil"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apakah anda puas ?"
+            android:textStyle="bold"
+            android:layout_marginTop="30sp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/merah"/>
+        <RadioGroup
+            android:layout_marginLeft="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aku sangat tidak puas"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aku sangat puas"/>
+        </RadioGroup>
+        <SeekBar
+            android:layout_marginHorizontal="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekbar" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress : 0%"
+            android:gravity="center"
+            android:textColor="@color/hijau"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id="@+id/tampilseekbar"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Tampilkan"
+        android:id="@+id/aktif"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:checked="true"/>
+    </LinearLayout>
+
+</ScrollView>
